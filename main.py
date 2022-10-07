@@ -1,5 +1,5 @@
 # random
-from random import randint
+from random import randint, choice
   # Python comes with a built in random library. There are a lot of functions included in this random library, so we will only 
   #show you two useful functions for now.
 # print("random")
@@ -19,14 +19,26 @@ print(my_gamble)
 
 
 
-if my_gamble == 10:
-  print("You win!")
-elif my_gamble == 8:
-  print("Roll again")
-elif my_gamble >= 12 and my_gamble <= 18:
-  print("You lost bud")
-else:my_gamble % 2 == 1
-print("You almost won")
+# if my_gamble == 10:
+#   print("You win!")
+# elif my_gamble == 8:
+#   print("Roll again")
+# elif my_gamble >= 12 and my_gamble <= 18:
+#   print("You lost bud")
+# else:my_gamble % 2 == 1
+# print("You almost won")
+
+dictionary1 = {} #empty dictionary
+# color = ['blue', 'red', 'green', 'turquoise', 'purple']
+# my_random = choice(color)
+# print(my_random)
+my_characters = ['rogue','elf','knight','ninja','samurai']
+for character in my_characters:
+  if my_gamble == character[0]:
+    print(character)
+  else: 
+    print(my_gamble)
+
 
 
   # from random import shuffle
